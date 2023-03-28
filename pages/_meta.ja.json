@@ -1,5 +1,5 @@
 {
-  "index": "イントロ",
+  "index": "プロフィール",
   "another": "アナザーページ",
   "advanced": "Advanced (A Folder)",
   "about": {
@@ -9,7 +9,7 @@
   "contact": {
     "title": "お問い合わせ",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://just-another-hikaru.vercel.app/en/contact",
     "newWindow": true
   }
 }
