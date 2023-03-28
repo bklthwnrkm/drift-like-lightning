@@ -1,0 +1,15 @@
+{
+  "index": "イントロ",
+  "another": "アナザーページ",
+  "advanced": "Advanced (A Folder)",
+  "about": {
+    "title": "自己紹介",
+    "type": "page"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "type": "page",
+    "href": "https://twitter.com/shuding_",
+    "newWindow": true
+  }
+}
