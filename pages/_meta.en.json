@@ -1,10 +1,20 @@
 {
-  "index": "My Profile",
-  "another": "Another Page",
+  "index": {
+    "title": "My Profile"
+  },
+  "another": {
+    "title": "Another Page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
   "advanced": "Advanced (A Folder)",
   "about": {
     "title": "About",
-    "type": "page"
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   },
   "contact": {
     "title": "Contact",

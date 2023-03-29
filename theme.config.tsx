@@ -8,8 +8,26 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: "https://github.com/brkwtnh",
   footer: {
-    text: "Drift like lightning",
+    text: (
+      <span>
+        MIT {new Date().getFullYear()} ©{" "}
+        <a href="https://nextra.site" target="_blank">
+          Drift Like Lightning
+        </a>
+        .
+      </span>
+    ),
   },
+  feedback: {
+    content: null,
+  },
+  editLink: {
+    text: null,
+  },
+  toc: {
+    title: "Table of Contents",
+  },
+  primaryHue: 220,
   i18n: [
     { locale: "en", text: "English" },
     { locale: "ja", text: "日本語" },
