@@ -1,7 +1,8 @@
 {
   "index": "プロフィール",
   "another": "アナザーページ",
-  "advanced": "Advanced (A Folder)",
+  "certifications": "取得資格",
+  "advanced": "アドヴァンス(フォルダ)",
   "about": {
     "title": "自己紹介",
     "type": "page"

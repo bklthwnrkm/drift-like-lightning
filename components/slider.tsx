@@ -9,7 +9,7 @@ const Slider = () => {
       aria-label="carousel slider"
       options={{
         autoplay: true,
-        interval: 2000,
+        interval: 2500,
         rewind: true,
       }}
     >

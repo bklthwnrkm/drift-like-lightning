@@ -1,7 +1,6 @@
 // Example from https://beta.reactjs.org/learn
 
 import { useState } from "react";
-import styles from "./counters.module.css";
 
 const Counters = () => {
   const [count, setCount] = useState(0);
@@ -12,7 +11,7 @@ const Counters = () => {
 
   return (
     <div>
-      <button onClick={handleClick} className={styles.counter}>
+      <button onClick={handleClick} className="bg-blue-500">
         Clicked {count} times
       </button>
     </div>

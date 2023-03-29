@@ -24,4 +24,6 @@
 - Added @splidejs/react-splide for image slider function
   - Created Slider.tsx
   - Took care of the error "isn't a valid image for ..."
+    - Just made public dir and put static in it
     - https://stackoverflow.com/questions/71617582/i-am-getting-the-error-the-requested-resource-isnt-a-valid-image-for-public-l
+- Modified contents in some mdx files

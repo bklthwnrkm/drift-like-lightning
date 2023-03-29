@@ -32,7 +32,7 @@ const config: DocsThemeConfig = {
   themeSwitch: {
     component: <ThemeSwitcher />,
   },
-  primaryHue: 220,
+  primaryHue: 210,
   i18n: [
     { locale: "en", text: "English" },
     { locale: "ja", text: "日本語" },

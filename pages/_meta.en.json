@@ -3,11 +3,9 @@
     "title": "My Profile"
   },
   "another": {
-    "title": "Another Page",
-    "theme": {
-      "layout": "raw"
-    }
+    "title": "Another Page"
   },
+  "certifications": "Certifications",
   "advanced": "Advanced (A Folder)",
   "about": {
     "title": "About",
