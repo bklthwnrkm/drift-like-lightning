@@ -27,3 +27,5 @@
     - Just made public dir and put static in it
     - https://stackoverflow.com/questions/71617582/i-am-getting-the-error-the-requested-resource-isnt-a-valid-image-for-public-l
 - Modified contents in some mdx files
+
+0330

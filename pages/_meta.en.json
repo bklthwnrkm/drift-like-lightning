@@ -2,9 +2,7 @@
   "index": {
     "title": "My Profile"
   },
-  "another": {
-    "title": "Another Page"
-  },
+  "another": "Another page",
   "certifications": "Certifications",
   "advanced": "Advanced (A Folder)",
   "about": {

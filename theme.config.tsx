@@ -6,9 +6,9 @@ import Counters from "@/components/counters";
 const config: DocsThemeConfig = {
   logo: <span>⛅Drift like lightning⚡</span>,
   project: {
-    link: "https://github.com/brkwtnh",
+    link: "https://github.com/bklthwnrkm",
   },
-  docsRepositoryBase: "https://github.com/brkwtnh",
+  docsRepositoryBase: "https://github.com/bklthwnrkm",
   footer: {
     text: (
       <span>
