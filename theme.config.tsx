@@ -1,7 +1,7 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import ThemeSwitch from "@/components/themeSwitch";
-import Counters from "@/components/counters";
+// import Counters from "@/components/counters";
 
 const config: DocsThemeConfig = {
   logo: <span>⛅Drift like lightning⚡</span>,
