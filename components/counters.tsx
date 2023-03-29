@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./counters.module.css";
 
-function MyButton() {
+const Counters = () => {
   const [count, setCount] = useState(0);
 
   function handleClick() {
@@ -17,8 +17,6 @@ function MyButton() {
       </button>
     </div>
   );
-}
+};
 
-export default function MyApp() {
-  return <MyButton />;
-}
+export default Counters;

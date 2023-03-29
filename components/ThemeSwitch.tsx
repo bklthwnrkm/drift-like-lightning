@@ -1,10 +1,28 @@
 // import { motion } from "framer-motion";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-// import useThemeOnMounted from "@/hooks/useThemeOnMounted";
+import useThemeOnMounted from "@/hooks/useThemeOnMounted";
+import SunIcon from "@/data/sun.svg";
+import MoonIcon from "@/data/moon.svg";
 
 const ThemeSwitch = () => {
-  // const { mounted, theme, setTheme, resolvedTheme } = useThemeOnMounted();
+  const { mounted, theme, setTheme, resolvedTheme } = useThemeOnMounted();
+  return (
+    <button
+      aria-label="Toggle between dark and light mode"
+      onClick={() =>
+        setTheme(
+          theme === "dark" || resolvedTheme === "dark" ? "light" : "dark"
+        )
+      }
+    >
+      {mounted && (theme === "dark" || resolvedTheme === "dark") ? (
+        <MoonIcon />
+      ) : (
+        <SunIcon />
+      )}
+    </button>
+  );
   // return (
   //   <motion.button
   //     aria-label="Toggle between dark and light mode"
