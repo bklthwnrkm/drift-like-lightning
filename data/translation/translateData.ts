@@ -1,3 +1,5 @@
+import { TranslateDataString } from "./translateDataTypes";
+
 export const certificationData = {
   en: [
     {

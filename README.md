@@ -38,3 +38,5 @@
 - Added router obj to certifications.lang.mdx to switch alt values depending on locales
 - Added next-pwa
 - Created useLocalizedDataFetcher.ts to move the logic of fetching localized data from views to hooks
+- Created types dir and index.ts in it
+  - Added TranslateDataStringType and TranslateDataObjectType to it
