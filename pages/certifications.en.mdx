@@ -1,13 +1,21 @@
+import { useRouter } from "next/router";
 import Slider from "@/components/slider";
 import { certificationImageData } from "@/data/translation/translateData";
 
 # Certifications
 
-<Slider
-  images={certificationImageData["en"]}
-  options={{
-    autoplay: true,
-    interval: 2500,
-    rewind: true,
-  }}
-/>
+export const CustomSlider = () => {
+  const { locale } = useRouter();
+  return (
+    <Slider
+      images={certificationImageData[locale]}
+      options={{
+        autoplay: true,
+        interval: 2500,
+        rewind: true,
+      }}
+    />
+  );
+};
+
+<CustomSlider />

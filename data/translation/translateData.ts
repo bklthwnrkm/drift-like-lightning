@@ -1,10 +1,3 @@
-import { ImageProps } from "next/image";
-
-type PickedImageProps = {
-  alt: string;
-  src: string | ImageProps["src"];
-};
-
 export const certificationData = {
   en: [
     {

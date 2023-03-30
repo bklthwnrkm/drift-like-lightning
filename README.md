@@ -34,3 +34,5 @@
 - Generalized slider.tsx
   - Let it receive any props of Splide
   - With utility type Pick, some of image props can be passed onto it
+- Came up with a solution that enables mdx files to have next/router, thereby handling locales.
+- Added router obj to certifications.lang.mdx
