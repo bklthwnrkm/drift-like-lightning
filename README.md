@@ -34,5 +34,7 @@
 - Generalized slider.tsx
   - Let it receive any props of Splide
   - With utility type Pick, some of image props can be passed onto it
-- Came up with a solution that enables mdx files to have next/router, thereby handling locales.
-- Added router obj to certifications.lang.mdx
+- Came up with a solution that enables mdx files to have next/router, thereby handling locales
+- Added router obj to certifications.lang.mdx to switch alt values depending on locales
+- Added next-pwa
+- Created useLocalizedDataFetcher.ts to move the logic of fetching localized data from views to hooks

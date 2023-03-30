@@ -43,3 +43,8 @@ export const certificationImageData = {
     },
   ],
 };
+
+export const themeToggleButtonData = {
+  en: "Toggle between dark and light mode",
+  ja: "ダーク/ライトモードの切り替え",
+};
