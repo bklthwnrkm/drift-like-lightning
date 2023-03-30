@@ -10,7 +10,7 @@ const ThemeSwitcher = () => {
 
   return (
     <button
-      aria-label={localizedData}
+      aria-label={typeof localizedData === "string" ? localizedData : ""}
       onClick={() =>
         setTheme(
           theme === "dark" || resolvedTheme === "dark" ? "light" : "dark"
