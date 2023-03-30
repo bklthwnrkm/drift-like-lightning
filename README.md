@@ -29,3 +29,8 @@
 - Modified contents in some mdx files
 
 0330
+
+- Created data/translation dir and translateData.ts in it
+- Generalized slider.tsx
+  - Let it receive any props of Splide
+  - With utility type Pick, some of image props can be passed onto it

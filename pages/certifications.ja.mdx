@@ -1,5 +1,13 @@
 import Slider from "@/components/slider";
+import { certificationImageData } from "@/data/translation/translateData";
 
 # 取得資格
 
-<Slider />
+<Slider
+  images={certificationImageData["en"]}
+  options={{
+    autoplay: true,
+    interval: 2500,
+    rewind: true,
+  }}
+/>
