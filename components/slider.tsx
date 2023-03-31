@@ -1,14 +1,20 @@
-import { Splide, SplideSlide, SplideProps } from "@splidejs/react-splide";
-import { ImageProps } from "next/image";
 import "@splidejs/splide/css";
 import "@splidejs/react-splide/css";
+import { Splide, SplideSlide, SplideProps } from "@splidejs/react-splide";
+import { ImageProps } from "next/image";
 import Image from "@/components/image";
+import useLocalizedDataFetcher from "@/hooks/useLocalizedDataFetcher";
+import { sliderLabelData } from "@/data/translation/translateData";
 
 type SliderProps = { images: Pick<ImageProps, "alt" | "src">[] } & SplideProps;
 
 const Slider = ({ images, ...rest }: SliderProps) => {
+  const { localizedData } = useLocalizedDataFetcher(sliderLabelData);
   return (
-    <Splide aria-label="carousel slider" {...rest}>
+    <Splide
+      aria-label={typeof localizedData === "string" ? localizedData : ""}
+      {...rest}
+    >
       {images.map((image) => (
         <SplideSlide className="relative max-w-full h-[480px]">
           <Image

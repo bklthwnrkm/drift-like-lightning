@@ -1,6 +1,6 @@
-import { TranslateDataString } from "./translateDataTypes";
+import { TranslateDataStringType, TranslateDataObjectType } from "@/types";
 
-export const certificationData = {
+export const certificationData: TranslateDataObjectType = {
   en: [
     {
       title: "The EIKEN Test in Practical English Proficiency Grade 1",
@@ -23,7 +23,7 @@ export const certificationData = {
   ],
 };
 
-export const certificationImageData = {
+export const certificationImageData: TranslateDataObjectType = {
   en: [
     {
       alt: "The EIKEN Test in Practical English Proficiency Grade 1",
@@ -46,7 +46,12 @@ export const certificationImageData = {
   ],
 };
 
-export const themeToggleButtonData = {
+export const themeToggleButtonData: TranslateDataStringType = {
   en: "Toggle between dark and light mode",
   ja: "ダーク/ライトモードの切り替え",
+};
+
+export const sliderLabelData: TranslateDataStringType = {
+  en: "Carousel slider",
+  ja: "カルーセルスライダー",
 };
