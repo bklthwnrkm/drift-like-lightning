@@ -17,7 +17,10 @@ const LocalizedDate = ({ designatedDate }: LocalizedDateProps) => {
   const format = useFormatter();
   const dateTime = designatedDate !== undefined ? designatedDate : new Date();
   const { localizedData } = useLocalizedDataFetcher(localizedDateData);
-  const formattedDate = format.dateTime(dateTime, localeData[locale].options);
+  const formattedDate = format.dateTime(
+    dateTime,
+    localeData[locale][0].options
+  );
 
   return (
     <dl className="flex gap-4 pb-2">
