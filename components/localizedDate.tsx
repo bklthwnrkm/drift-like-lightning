@@ -7,7 +7,7 @@ import {
 } from "@/data/translation/translateData";
 
 type LocalizedDateProps = {
-  designatedDate?: Date;
+  designatedDate?: Date | string;
 };
 
 // 引数に指定の日付があればそれを、なければ現日時刻をローカライズして返す
@@ -15,7 +15,9 @@ type LocalizedDateProps = {
 const LocalizedDate = ({ designatedDate }: LocalizedDateProps) => {
   const { locale } = useRouter();
   const format = useFormatter();
-  const dateTime = designatedDate !== undefined ? designatedDate : new Date();
+
+  let dateTime = designatedDate !== undefined ? designatedDate : new Date();
+  if (typeof dateTime === "string") dateTime = new Date(dateTime);
   const { localizedData } = useLocalizedDataFetcher(localizedDateData);
   const formattedDate = format.dateTime(
     dateTime,
