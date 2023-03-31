@@ -12,3 +12,13 @@ export type TranslateDataObjectType = Record<
 // };
 
 export type TranslateDataStringType = Record<string, string>;
+
+export type LocalizedDateType = Record<
+  string,
+  Array<
+    Record<
+      "options",
+      import("../node_modules/use-intl/dist/core/DateTimeFormatOptions").default
+    >
+  >
+>;

@@ -1,4 +1,8 @@
-import { TranslateDataStringType, TranslateDataObjectType } from "@/types";
+import {
+  TranslateDataStringType,
+  TranslateDataObjectType,
+  LocalizedDateType,
+} from "@/types";
 
 export const certificationData: TranslateDataObjectType = {
   en: [
@@ -10,6 +14,10 @@ export const certificationData: TranslateDataObjectType = {
       title: "NASM-PES",
       acquisitionDate: "",
     },
+    {
+      title: "TOEIC Listening & Reading",
+      acquisitionDate: "",
+    },
   ],
   ja: [
     {
@@ -18,6 +26,10 @@ export const certificationData: TranslateDataObjectType = {
     },
     {
       title: "全米ｽﾎﾟｰﾂ医学協会ﾊﾟﾌｫｰﾏﾝｽ向上ｽﾍﾟｼｬﾘｽﾄ",
+      acquisitionDate: "",
+    },
+    {
+      title: "TOEIC Listening & Reading",
       acquisitionDate: "",
     },
   ],
@@ -48,10 +60,46 @@ export const certificationImageData: TranslateDataObjectType = {
 
 export const themeToggleButtonData: TranslateDataStringType = {
   en: "Toggle between dark and light mode",
-  ja: "ダーク/ライトモードの切り替え",
+  ja: "ﾀﾞｰｸ/ﾗｲﾄﾓｰﾄﾞの切り替え",
 };
 
 export const sliderLabelData: TranslateDataStringType = {
   en: "Carousel slider",
-  ja: "カルーセルスライダー",
+  ja: "ｶﾙｰｾﾙｽﾗｲﾀﾞｰ",
+};
+
+export const localizedDateData: TranslateDataObjectType = {
+  en: [
+    {
+      published: "Published date",
+      updated: "Updated date",
+    },
+  ],
+  ja: [
+    {
+      published: "発行日",
+      updated: "更新日",
+    },
+  ],
+};
+
+export const localeData: LocalizedDateType = {
+  ja: [
+    {
+      options: {
+        year: "numeric",
+        month: "numeric",
+        day: "numeric",
+      },
+    },
+  ],
+  en: [
+    {
+      options: {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      },
+    },
+  ],
 };

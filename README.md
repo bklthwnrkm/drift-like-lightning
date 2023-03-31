@@ -40,3 +40,9 @@
 - Created useLocalizedDataFetcher.ts to move the logic of fetching localized data from views to hooks
 - Created types dir and index.ts in it
   - Added TranslateDataStringType and TranslateDataObjectType to it
+
+0331
+
+- Added next-intl
+- Added NextIntlProvider to \_app.tsx
+- Created LocalizedDate.tsx

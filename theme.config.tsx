@@ -1,7 +1,7 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import ThemeSwitcher from "@/components/themeSwitcher";
-import Counters from "@/components/counters";
+import LocalizedDate from "@/components/localizedDate";
 
 const config: DocsThemeConfig = {
   logo: <span>⛅Drift like lightning⚡</span>,
@@ -26,6 +26,7 @@ const config: DocsThemeConfig = {
   editLink: {
     text: null,
   },
+  gitTimestamp: <LocalizedDate />,
   toc: {
     title: "Table of Contents",
   },
