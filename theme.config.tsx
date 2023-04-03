@@ -2,7 +2,7 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import ThemeSwitcher from "@/components/themeSwitcher";
 import LocalizedDate from "@/components/localizedDate";
-import CustomHead from "@/components/head";
+import { siteMetadata } from "@/data/siteMetadata";
 
 const config: DocsThemeConfig = {
   head: (
@@ -14,12 +14,12 @@ const config: DocsThemeConfig = {
   ),
   useNextSeoProps() {
     return {
-      defaultTitle: "Drift like lightning",
-      titleTemplate: "%s | Drift like lightning",
-      description: "This is a website run by Hikari",
+      defaultTitle: `${siteMetadata.title}`,
+      titleTemplate: `%s | ${siteMetadata.title}`,
+      description: `${siteMetadata.description}`,
     };
   },
-  logo: <span>⛅Drift like lightning⚡</span>,
+  logo: <span>⛅{siteMetadata.title}⚡</span>,
   project: {
     link: "https://github.com/bklthwnrkm",
   },
@@ -29,7 +29,7 @@ const config: DocsThemeConfig = {
       <span>
         MIT {new Date().getFullYear()} ©{" "}
         <a href="https://nextra.site" target="_blank">
-          Drift Like Lightning
+          {siteMetadata.title}
         </a>
         .
       </span>
