@@ -56,3 +56,5 @@
     - https://zenn.dev/tns_00/articles/next-pwa-install
     - https://www.simicart.com/manifest-generator.html/
   - Created \_document.tsx temporarily and added some related descriptions to it.
+- Added next-compose-plugins to make next.config.js look better
+- Tweaked theme.config.tsx on head, and useNextSeoProps.

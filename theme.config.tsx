@@ -2,8 +2,24 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import ThemeSwitcher from "@/components/themeSwitcher";
 import LocalizedDate from "@/components/localizedDate";
+import CustomHead from "@/components/head";
 
 const config: DocsThemeConfig = {
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="Drift like lightning" />
+      <meta
+        property="og:description"
+        content="This is a website run by Hikari"
+      />
+    </>
+  ),
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s - Drift like lightning",
+    };
+  },
   logo: <span>⛅Drift like lightning⚡</span>,
   project: {
     link: "https://github.com/bklthwnrkm",
