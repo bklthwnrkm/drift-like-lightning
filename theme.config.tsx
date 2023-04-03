@@ -10,15 +10,13 @@ const config: DocsThemeConfig = {
       <link rel="manifest" href="/manifest.json" />
       <link rel="apple-touch-icon" href="/icon.png"></link>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta
-        property="og:description"
-        content="This is a website run by Hikari"
-      />
     </>
   ),
   useNextSeoProps() {
     return {
-      titleTemplate: "%s - Drift like lightning",
+      defaultTitle: "Drift like lightning",
+      titleTemplate: "%s | Drift like lightning",
+      description: "This is a website run by Hikari",
     };
   },
   logo: <span>⛅Drift like lightning⚡</span>,
