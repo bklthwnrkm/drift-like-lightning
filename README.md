@@ -50,3 +50,9 @@
 0403
 
 - Changed font-family for the whole
+- Did some settings for pwa
+  - Added withPWA to next.config.js
+  - Created manifest images and docs and uploaded them in public
+    - https://zenn.dev/tns_00/articles/next-pwa-install
+    - https://www.simicart.com/manifest-generator.html/
+  - Created \_document.tsx temporarily and added some related descriptions to it.
