@@ -50,7 +50,7 @@
 0403
 
 - Changed font-family for the whole
-- Did some settings for pwa
+- Did initial settings for pwa
   - Added withPWA to next.config.js
   - Created manifest images and docs and uploaded them in public
     - https://zenn.dev/tns_00/articles/next-pwa-install

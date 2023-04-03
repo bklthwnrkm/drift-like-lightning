@@ -2,10 +2,15 @@ const withNextra = require("nextra")({
   theme: "nextra-theme-docs",
   themeConfig: "./theme.config.tsx",
 });
-const withPWA = require("next-pwa");
+const withPWA = require("next-pwa")({
+  dest: "public",
+  register: true,
+  skipWaiting: true,
+  disable: process.env.NODE_ENV === "development",
+});
 
 module.exports = withNextra(
-  {
+  withPWA({
     i18n: {
       locales: ["en", "ja"],
       defaultLocale: "en",
@@ -17,13 +22,6 @@ module.exports = withNextra(
         use: ["@svgr/webpack"],
       });
       return config;
-    },
-  },
-  withPWA({
-    pwa: {
-      dest: "public",
-      register: true,
-      skipWaiting: true,
     },
   })
 );
