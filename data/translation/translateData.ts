@@ -15,7 +15,7 @@ export const certificationData: TranslateDataObjectType = {
       acquisitionDate: "",
     },
     {
-      title: "TOEIC Listening & Reading",
+      title: "TOEIC Listening & Reading 925",
       acquisitionDate: "",
     },
   ],
@@ -29,7 +29,7 @@ export const certificationData: TranslateDataObjectType = {
       acquisitionDate: "",
     },
     {
-      title: "TOEIC Listening & Reading",
+      title: "TOEIC Listening & Reading 925点",
       acquisitionDate: "",
     },
   ],

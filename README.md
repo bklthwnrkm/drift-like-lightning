@@ -46,3 +46,7 @@
 - Added next-intl
 - Added NextIntlProvider to \_app.tsx
 - Created LocalizedDate.tsx
+
+0403
+
+- Changed font-family for the whole

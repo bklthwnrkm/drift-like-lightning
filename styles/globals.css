@@ -4,6 +4,7 @@
 
 @layer base {
   html {
-    font-family: var(--font-sans) !important;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+      "Hiragino Sans", Meiryo, sans-serif;
   }
 }
