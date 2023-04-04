@@ -21,19 +21,11 @@ const config: DocsThemeConfig = {
   },
   logo: <span>⛅{siteMetadata.title}⚡</span>,
   project: {
-    link: "https://github.com/bklthwnrkm",
+    link: `${siteMetadata.githubUrl}`,
   },
-  docsRepositoryBase: "https://github.com/bklthwnrkm",
+  docsRepositoryBase: `${siteMetadata.githubUrl}`,
   footer: {
-    text: (
-      <span>
-        MIT {new Date().getFullYear()} ©{" "}
-        <a href="https://nextra.site" target="_blank">
-          {siteMetadata.title}
-        </a>
-        .
-      </span>
-    ),
+    component: null,
   },
   feedback: {
     content: null,
@@ -42,13 +34,19 @@ const config: DocsThemeConfig = {
     text: null,
   },
   gitTimestamp: <LocalizedDate />,
+  // search: {
+  //   emptyResult: "aaaaa",
+  // },
   toc: {
     title: "Table of Contents",
   },
   themeSwitch: {
     component: <ThemeSwitcher />,
   },
-  primaryHue: 210,
+  primaryHue: {
+    light: 210,
+    dark: 200,
+  },
   i18n: [
     { locale: "en", text: "English" },
     { locale: "ja", text: "日本語" },

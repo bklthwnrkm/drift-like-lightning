@@ -59,3 +59,7 @@
 - Added next-compose-plugins to make next.config.js look better
 - Tweaked theme.config.tsx on head, and useNextSeoProps.
 - Created data/siteMetadata.ts
+
+0404
+
+- Created messages/[locale].json for internationalization

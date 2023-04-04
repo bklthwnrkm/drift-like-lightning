@@ -22,15 +22,15 @@ export const certificationData: TranslateDataObjectType = {
   ja: [
     {
       title: "実用英語技能検定1級",
-      acquisitionDate: "",
+      acquisitionDate: "2021-11-30",
     },
     {
       title: "全米ｽﾎﾟｰﾂ医学協会ﾊﾟﾌｫｰﾏﾝｽ向上ｽﾍﾟｼｬﾘｽﾄ",
-      acquisitionDate: "",
+      acquisitionDate: "2020-09-08",
     },
     {
       title: "TOEIC Listening & Reading 925点",
-      acquisitionDate: "",
+      acquisitionDate: "2020-10-20",
     },
   ],
 };
@@ -45,6 +45,10 @@ export const certificationImageData: TranslateDataObjectType = {
       alt: "NASM-PES",
       src: "/static/images/nasm-pes.jpg",
     },
+    {
+      alt: "TOEIC Listening and Reading score",
+      src: "/static/images/toeic-l-and-r-score.jpg",
+    },
   ],
   ja: [
     {
@@ -54,6 +58,10 @@ export const certificationImageData: TranslateDataObjectType = {
     {
       alt: "全米ｽﾎﾟｰﾂ医学協会ﾊﾟﾌｫｰﾏﾝｽ向上ｽﾍﾟｼｬﾘｽﾄ",
       src: "/static/images/nasm-pes.jpg",
+    },
+    {
+      alt: "TOEIC ﾘｽﾆﾝｸﾞ ﾘｰﾃﾞｨﾝｸﾞｽｺｱ",
+      src: "/static/images/toeic-l-and-r-score.jpg",
     },
   ],
 };
@@ -100,6 +108,19 @@ export const localeData: LocalizedDateType = {
         month: "long",
         day: "numeric",
       },
+    },
+  ],
+};
+
+export const searchConfigData: TranslateDataObjectType = {
+  en: [
+    {
+      notFound: "Not Found",
+    },
+  ],
+  ja: [
+    {
+      notFound: "検索結果が見つかりません",
     },
   ],
 };
