@@ -63,3 +63,10 @@
 0404
 
 - Created messages/[locale].json for internationalization
+
+0405
+
+- Deleted useLocales.ts
+- Created Merge type in types/index.ts
+- Developed localizedString.tsx
+  - Set type definitions

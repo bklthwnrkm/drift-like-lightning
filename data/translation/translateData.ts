@@ -112,7 +112,7 @@ export const localeData: LocalizedDateType = {
   ],
 };
 
-export const searchConfigData: TranslateDataObjectType = {
+export const commonConfigData: TranslateDataObjectType = {
   en: [
     {
       notFound: "Not Found",

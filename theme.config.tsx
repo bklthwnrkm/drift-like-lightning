@@ -2,7 +2,9 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import ThemeSwitcher from "@/components/themeSwitcher";
 import LocalizedDate from "@/components/localizedDate";
+import LocalizedString from "@/components/localizedString";
 import { siteMetadata } from "@/data/siteMetadata";
+import { commonConfigData } from "@/data/translation/translateData";
 
 const config: DocsThemeConfig = {
   head: (
@@ -34,9 +36,15 @@ const config: DocsThemeConfig = {
     text: null,
   },
   gitTimestamp: <LocalizedDate />,
-  // search: {
-  //   emptyResult: "aaaaa",
-  // },
+  search: {
+    emptyResult: (
+      <LocalizedString<"p">
+        Component="p"
+        data={commonConfigData}
+        className="bg-blue-500"
+      />
+    ),
+  },
   toc: {
     title: "Table of Contents",
   },
