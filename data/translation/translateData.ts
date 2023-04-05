@@ -76,6 +76,11 @@ export const sliderLabelData: TranslateDataStringType = {
   ja: "ｶﾙｰｾﾙｽﾗｲﾀﾞｰ",
 };
 
+export const searchNotFoundData: TranslateDataStringType = {
+  en: "Not Found",
+  ja: "検索結果が見つかりません",
+};
+
 export const localizedDateData: TranslateDataObjectType = {
   en: [
     {

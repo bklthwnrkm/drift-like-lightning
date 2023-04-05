@@ -4,7 +4,7 @@ import ThemeSwitcher from "@/components/themeSwitcher";
 import LocalizedDate from "@/components/localizedDate";
 import LocalizedString from "@/components/localizedString";
 import { siteMetadata } from "@/data/siteMetadata";
-import { commonConfigData } from "@/data/translation/translateData";
+import { searchNotFoundData } from "@/data/translation/translateData";
 
 const config: DocsThemeConfig = {
   head: (
@@ -38,12 +38,13 @@ const config: DocsThemeConfig = {
   gitTimestamp: <LocalizedDate />,
   search: {
     emptyResult: (
-      <LocalizedString<"p">
-        Component="p"
-        data={commonConfigData}
-        className="bg-blue-500"
+      <LocalizedString
+        Component="span"
+        data={searchNotFoundData}
+        className="nx-block nx-select-none nx-p-8 nx-text-center nx-text-sm nx-text-gray-400"
       />
     ),
+    placeholder: "sss",
   },
   toc: {
     title: "Table of Contents",

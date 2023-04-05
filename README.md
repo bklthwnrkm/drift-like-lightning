@@ -70,3 +70,4 @@
 - Created Merge type in types/index.ts
 - Developed localizedString.tsx
   - Set type definitions
+- Wrestled with type puzzles(localizedString.tsx, useLocalizedDataFetcher.ts)
