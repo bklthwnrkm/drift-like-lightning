@@ -1,7 +1,6 @@
 import React, { ElementType, ComponentPropsWithoutRef } from "react";
 import useLocalizedDataFetcher from "@/hooks/useLocalizedDataFetcher";
 import { Merge, TranslateDataStringType } from "@/types";
-import { useTranslations } from "next-intl";
 
 type TranslatedStringProps<
   C extends keyof Pick<JSX.IntrinsicElements, "div" | "p" | "span">
@@ -19,11 +18,12 @@ const TranslatedString = <
   data,
   ...rest
 }: TranslatedStringProps<C>) => {
-  const t = useTranslations("Common.Search");
   const { localizedData } = useLocalizedDataFetcher(data);
   const Component = elementType as ElementType;
 
-  return <Component {...rest}>{t("placeholder")}</Component>;
+  return <Component {...rest}>{localizedData}</Component>;
 };
 
 export default TranslatedString;
+
+// これ、単に翻訳した文字列を返すだけのシンプルなコンポーネントにする？
