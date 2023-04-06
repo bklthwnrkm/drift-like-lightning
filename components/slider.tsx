@@ -9,12 +9,9 @@ import { sliderLabelData } from "@/data/translation/translateData";
 type SliderProps = { images: Pick<ImageProps, "alt" | "src">[] } & SplideProps;
 
 const Slider = ({ images, ...rest }: SliderProps) => {
-  const { localizedData } = useLocalizedDataFetcher(sliderLabelData);
+  const { localizedData: ariaLabel } = useLocalizedDataFetcher(sliderLabelData);
   return (
-    <Splide
-      aria-label={typeof localizedData === "string" ? localizedData : ""}
-      {...rest}
-    >
+    <Splide aria-label={ariaLabel} {...rest}>
       {images.map((image) => (
         <SplideSlide className="relative max-w-full h-[480px]">
           <Image

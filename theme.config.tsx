@@ -2,9 +2,9 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import ThemeSwitcher from "@/components/themeSwitcher";
 import LocalizedDate from "@/components/localizedDate";
-import LocalizedString from "@/components/localizedString";
+import TranslatedString from "@/components/translatedString";
 import { siteMetadata } from "@/data/siteMetadata";
-import { searchNotFoundData } from "@/data/translation/translateData";
+import { searchNotFoundData, tocsData } from "@/data/translation/translateData";
 
 const config: DocsThemeConfig = {
   head: (
@@ -38,8 +38,8 @@ const config: DocsThemeConfig = {
   gitTimestamp: <LocalizedDate />,
   search: {
     emptyResult: (
-      <LocalizedString
-        Component="span"
+      <TranslatedString<"span">
+        as="span"
         data={searchNotFoundData}
         className="nx-block nx-select-none nx-p-8 nx-text-center nx-text-sm nx-text-gray-400"
       />
@@ -47,7 +47,7 @@ const config: DocsThemeConfig = {
     placeholder: "sss",
   },
   toc: {
-    title: "Table of Contents",
+    title: <TranslatedString<"span"> as="span" data={tocsData} />,
   },
   themeSwitch: {
     component: <ThemeSwitcher />,

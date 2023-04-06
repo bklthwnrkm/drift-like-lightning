@@ -6,11 +6,13 @@ import useLocalizedDataFetcher from "@/hooks/useLocalizedDataFetcher";
 
 const ThemeSwitcher = () => {
   const { mounted, theme, setTheme, resolvedTheme } = useThemeOnMounted();
-  const { localizedData } = useLocalizedDataFetcher(themeToggleButtonData);
+  const { localizedData: ariaLabel } = useLocalizedDataFetcher(
+    themeToggleButtonData
+  );
 
   return (
     <button
-      aria-label={typeof localizedData === "string" ? localizedData : ""}
+      aria-label={ariaLabel}
       onClick={() =>
         setTheme(
           theme === "dark" || resolvedTheme === "dark" ? "light" : "dark"

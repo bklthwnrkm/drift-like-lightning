@@ -117,15 +117,7 @@ export const localeData: LocalizedDateType = {
   ],
 };
 
-export const commonConfigData: TranslateDataObjectType = {
-  en: [
-    {
-      notFound: "Not Found",
-    },
-  ],
-  ja: [
-    {
-      notFound: "検索結果が見つかりません",
-    },
-  ],
+export const tocsData: TranslateDataStringType = {
+  en: "Table of Contents",
+  ja: "目次",
 };

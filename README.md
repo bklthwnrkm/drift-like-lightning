@@ -71,3 +71,7 @@
 - Developed localizedString.tsx
   - Set type definitions
 - Wrestled with type puzzles(localizedString.tsx, useLocalizedDataFetcher.ts)
+
+0406
+
+- Specified return value type of useLocalizedDataFetcher.ts
