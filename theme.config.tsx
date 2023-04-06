@@ -1,5 +1,4 @@
 import React from "react";
-import { useRouter } from "next/router";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import ThemeSwitcher from "@/components/themeSwitcher";
 import LocalizedDate from "@/components/localizedDate";
@@ -51,7 +50,6 @@ const config: DocsThemeConfig = {
       />
     ),
     placeholder() {
-      const { locale } = useRouter();
       const { localizedData: placeholder } =
         useLocalizedDataFetcher(placeholderData);
       return placeholder;
