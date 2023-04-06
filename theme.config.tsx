@@ -1,10 +1,16 @@
 import React from "react";
+import { useRouter } from "next/router";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import ThemeSwitcher from "@/components/themeSwitcher";
 import LocalizedDate from "@/components/localizedDate";
 import TranslatedString from "@/components/translatedString";
 import { siteMetadata } from "@/data/siteMetadata";
-import { searchNotFoundData, tocsData } from "@/data/translation/translateData";
+import {
+  searchNotFoundData,
+  tocsData,
+  placeholderData,
+} from "@/data/translation/translateData";
+import useLocalizedDataFetcher from "@/hooks/useLocalizedDataFetcher";
 
 const config: DocsThemeConfig = {
   head: (
@@ -44,7 +50,12 @@ const config: DocsThemeConfig = {
         className="nx-block nx-select-none nx-p-8 nx-text-center nx-text-sm nx-text-gray-400"
       />
     ),
-    placeholder: "sss",
+    placeholder() {
+      const { locale } = useRouter();
+      const { localizedData: placeholder } =
+        useLocalizedDataFetcher(placeholderData);
+      return placeholder;
+    },
   },
   toc: {
     title: <TranslatedString<"span"> as="span" data={tocsData} />,

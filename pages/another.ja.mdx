@@ -24,5 +24,8 @@ export const Counter = () => {
 ## External Component
 
 import Counters from "@/components/counters";
+import TranslatedString from "@/components/translatedString";
+import { searchNotFoundData, tocsData } from "@/data/translation/translateData";
 
 <Counters />
+<TranslatedString as="div" data={tocsData} />

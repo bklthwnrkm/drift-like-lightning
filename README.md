@@ -75,3 +75,5 @@
 0406
 
 - Specified return value type of useLocalizedDataFetcher.ts
+  - https://stackoverflow.com/questions/73527586/typescript-return-a-value-depends-on-generic-type
+- Added search placeholder translation to placeholder property in theme.config.tsx(\* Band-aid solution)

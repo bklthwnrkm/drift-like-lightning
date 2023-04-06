@@ -81,6 +81,11 @@ export const searchNotFoundData: TranslateDataStringType = {
   ja: "検索結果が見つかりません",
 };
 
+export const placeholderData: TranslateDataStringType = {
+  en: "Search pages...",
+  ja: "検索...",
+};
+
 export const localizedDateData: TranslateDataObjectType = {
   en: [
     {

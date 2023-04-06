@@ -2,7 +2,8 @@
   "Home": {},
   "Common": {
     "Search": {
-      "notFound": "Not Found."
+      "notFound": "Not Found.",
+      "placeholder": "Search pages..."
     }
   }
 }

@@ -1,6 +1,7 @@
 {
   "Home": {},
   "Search": {
-    "notFound": "検索結果が見つかりません"
+    "notFound": "検索結果が見つかりません",
+    "placeholder": "検索..."
   }
 }

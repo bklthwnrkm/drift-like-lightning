@@ -1,9 +1,3 @@
-// import { commonConfigData } from "@/data/translation/translateData";
-
-// const commonConfigKeyList = Object.keys(
-//   commonConfigData["en"]
-// ) as (keyof typeof commonConfigData)[];
-
 export type TranslateDataObjectType = Record<
   string,
   Array<Record<string, string>>
@@ -24,5 +18,3 @@ export type LocalizedDateType = Record<
 export type Merge<T> = {
   [K in keyof T]: T[K];
 };
-
-// export type CommonConfigKey = typeof commonConfigKeyList;
