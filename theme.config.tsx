@@ -1,5 +1,9 @@
 import React from "react";
-import { DocsThemeConfig } from "nextra-theme-docs";
+import {
+  DocsThemeConfig,
+  useMDXComponents,
+  useConfig,
+} from "nextra-theme-docs";
 import ThemeSwitcher from "@/components/themeSwitcher";
 import LocalizedDate from "@/components/localizedDate";
 import TranslatedString from "@/components/translatedString";
@@ -42,7 +46,7 @@ const config: DocsThemeConfig = {
     text: null,
   },
   // 日付はページのyamlに書いてgreymatterやらで文字列のまま取得しｺﾝﾎﾟｰﾈﾝﾄ内で変換し出力する？一連の流れを自動化したい(要はyamlに書くだけでページの指定場所に出力される)
-  gitTimestamp: <LocalizedDate />,
+  gitTimestamp: null,
   search: {
     emptyResult: (
       <span className="nx-block nx-select-none nx-p-8 nx-text-center nx-text-sm nx-text-gray-400">

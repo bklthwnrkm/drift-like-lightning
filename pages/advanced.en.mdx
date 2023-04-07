@@ -1,17 +1,13 @@
 ---
-title: "Advanced"
+title: "FrontMatter Title Advanced"
 date: "2023-04-07"
 ---
 
 import { useConfig } from "nextra-theme-docs";
+import MdxPageLayout from "@/layouts/mdxPageLayout";
 
-export function FrontMatter({ prop }) {
-  const config = useConfig();
-  return config.frontMatter[prop];
-}
+export default ({ children }) => <MdxPageLayout>{children}</MdxPageLayout>;
 
-<FrontMatter prop="title" />
-
-# Advanced
+## Advanced
 
 This is the index page for the Advanced folder!
