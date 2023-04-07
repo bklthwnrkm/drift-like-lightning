@@ -7,8 +7,8 @@ export type TranslateDataObjectType = Record<
 
 export type TranslateDataStringType = Record<string, string>;
 
-export type LocalizedDateType = Map<
-  typeof siteMetadata.locales[number],
+export type LocalizedDateType = Record<
+  string,
   Array<
     Record<
       "options",
@@ -16,6 +16,15 @@ export type LocalizedDateType = Map<
     >
   >
 >;
+// export type LocalizedDateType = Map<
+//   typeof siteMetadata.locales[number],
+//   Array<
+//     Record<
+//       "options",
+//       import("../node_modules/use-intl/dist/core/DateTimeFormatOptions").default
+//     >
+//   >
+// >;
 
 type Enumerate<
   N extends number,
