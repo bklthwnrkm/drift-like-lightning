@@ -85,6 +85,8 @@
 - Added type definitions for frontMatter
   - https://qiita.com/ntm718/items/324c1e6a9fa3acc3bc41
   - https://stackoverflow.com/questions/39494689/is-it-possible-to-restrict-number-to-a-certain-range
+  - https://github.com/shuding/nextra/pull/1364
 - Deleted messages/[locale].json
 - Changed localeData structure with Map
   - Accordingly, Created a type guard function for locales
+- Simplified type definition of localeData

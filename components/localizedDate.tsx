@@ -28,8 +28,8 @@ const LocalizedDate = ({ designatedDate }: LocalizedDateProps) => {
   const formattedDate = format.dateTime(
     dateTime,
     isRegisteredLocale(locale)
-      ? localeData.get(locale)[0].options
-      : localeData.get("en")[0].options
+      ? localeData.get(locale).options
+      : localeData.get("en").options
   );
 
   return (

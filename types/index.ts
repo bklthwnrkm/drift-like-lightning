@@ -9,22 +9,11 @@ export type TranslateDataStringType = Record<string, string>;
 
 export type LocalizedDateType = Map<
   typeof siteMetadata.locales[number],
-  Array<
-    Record<
-      "options",
-      import("../node_modules/use-intl/dist/core/DateTimeFormatOptions").default
-    >
+  Record<
+    "options",
+    import("../node_modules/use-intl/dist/core/DateTimeFormatOptions").default
   >
 >;
-// export type LocalizedDateType = Record<
-//   string,
-//   Array<
-//     Record<
-//       "options",
-//       import("../node_modules/use-intl/dist/core/DateTimeFormatOptions").default
-//     >
-//   >
-// >;
 
 type Enumerate<
   N extends number,
@@ -51,6 +40,7 @@ type YYYY = `19${ZeroToNine}${ZeroToNine}` | `20${ZeroToNine}${ZeroToNine}`;
 export type MyFrontMatterType = {
   date?: `${YYYY}-${MM}-${DD}` | `${YYYY}${MM}${DD}`;
   title?: string;
+  description?: string;
 };
 
 export type Merge<T> = {
