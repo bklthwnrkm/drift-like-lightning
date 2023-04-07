@@ -1,3 +1,17 @@
+---
+title: "アドヴァンス"
+date: "2023-04-07"
+---
+
+import { useConfig } from "nextra-theme-docs";
+
+export function FrontMatter({ prop }) {
+  const config = useConfig();
+  return config.frontMatter[prop];
+}
+
+<FrontMatter prop="title" />
+
 # Advanced
 
 This is the index page for the Advanced folder!
