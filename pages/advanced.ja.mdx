@@ -1,17 +1,12 @@
 ---
-title: "アドヴァンス"
+title: "frontMatterのアドヴァンスタイトル"
 date: "2023-04-07"
 ---
 
-import { useConfig } from "nextra-theme-docs";
+import MdxPageLayout from "@/layouts/mdxPageLayout";
 
-export function FrontMatter({ prop }) {
-  const config = useConfig();
-  return config.frontMatter[prop];
-}
+export default ({ children }) => <MdxPageLayout>{children}</MdxPageLayout>;
 
-<FrontMatter prop="title" />
+## アドヴァンス
 
-# Advanced
-
-This is the index page for the Advanced folder!
+アドヴァンスフォルダーのページです。

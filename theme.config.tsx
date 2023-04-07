@@ -45,7 +45,6 @@ const config: DocsThemeConfig = {
   editLink: {
     text: null,
   },
-  // 日付はページのyamlに書いてgreymatterやらで文字列のまま取得しｺﾝﾎﾟｰﾈﾝﾄ内で変換し出力する？一連の流れを自動化したい(要はyamlに書くだけでページの指定場所に出力される)
   gitTimestamp: null,
   search: {
     emptyResult: (
