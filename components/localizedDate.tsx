@@ -5,10 +5,17 @@ import {
   localizedDateData,
   localeData,
 } from "@/data/translation/translateData";
+import { siteMetadata } from "@/data/siteMetadata";
 
 type LocalizedDateProps = {
   designatedDate?: Date | string;
   // description?: string;
+};
+
+const isRegisteredLocale = (
+  locale: unknown
+): locale is typeof siteMetadata.locales[number] => {
+  return siteMetadata.locales.some((e) => locale === e);
 };
 
 const LocalizedDate = ({ designatedDate }: LocalizedDateProps) => {
@@ -20,7 +27,9 @@ const LocalizedDate = ({ designatedDate }: LocalizedDateProps) => {
   const { localizedData } = useLocalizedDataFetcher(localizedDateData);
   const formattedDate = format.dateTime(
     dateTime,
-    localeData[locale][0].options
+    isRegisteredLocale(locale)
+      ? localeData.get(locale)[0].options
+      : localeData.get("en")[0].options
   );
 
   return (

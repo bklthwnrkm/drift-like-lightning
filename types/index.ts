@@ -7,8 +7,8 @@ export type TranslateDataObjectType = Record<
 
 export type TranslateDataStringType = Record<string, string>;
 
-export type LocalizedDateType = Record<
-  string,
+export type LocalizedDateType = Map<
+  typeof siteMetadata.locales[number],
   Array<
     Record<
       "options",
@@ -16,8 +16,8 @@ export type LocalizedDateType = Record<
     >
   >
 >;
-// export type LocalizedDateType = Map<
-//   typeof siteMetadata.locales[number],
+// export type LocalizedDateType = Record<
+//   string,
 //   Array<
 //     Record<
 //       "options",
