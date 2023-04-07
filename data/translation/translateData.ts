@@ -101,26 +101,52 @@ export const localizedDateData: TranslateDataObjectType = {
   ],
 };
 
-export const localeData: LocalizedDateType = {
-  ja: [
-    {
-      options: {
-        year: "numeric",
-        month: "numeric",
-        day: "numeric",
+export const localeData: LocalizedDateType = new Map([
+  [
+    "ja",
+    [
+      {
+        options: {
+          year: "numeric",
+          month: "numeric",
+          day: "numeric",
+        },
       },
-    },
+    ],
   ],
-  en: [
-    {
-      options: {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
+  [
+    "en",
+    [
+      {
+        options: {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        },
       },
-    },
+    ],
   ],
-};
+]);
+// export const localeData: LocalizedDateType = {
+//   ja: [
+//     {
+//       options: {
+//         year: "numeric",
+//         month: "numeric",
+//         day: "numeric",
+//       },
+//     },
+//   ],
+//   en: [
+//     {
+//       options: {
+//         year: "numeric",
+//         month: "long",
+//         day: "numeric",
+//       },
+//     },
+//   ],
+// };
 
 export const tocsData: TranslateDataStringType = {
   en: "Table of Contents",

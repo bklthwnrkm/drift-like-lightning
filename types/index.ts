@@ -1,3 +1,5 @@
+import { siteMetadata } from "@/data/siteMetadata";
+
 export type TranslateDataObjectType = Record<
   string,
   Array<Record<string, string>>
@@ -5,8 +7,8 @@ export type TranslateDataObjectType = Record<
 
 export type TranslateDataStringType = Record<string, string>;
 
-export type LocalizedDateType = Record<
-  string,
+export type LocalizedDateType = Map<
+  typeof siteMetadata.locales[number],
   Array<
     Record<
       "options",

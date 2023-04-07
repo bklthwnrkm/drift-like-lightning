@@ -7,7 +7,6 @@ import { MyFrontMatterType } from "@/types";
 type Props = {
   children: ReactNode;
 };
-// frontMatterに型定義導入されたっぽいから定義する(date は yyyy-mm-dd表記とか)
 const MdxPageLayout = ({ children }: Props) => {
   const { frontMatter, title } = useConfig<MyFrontMatterType>();
 

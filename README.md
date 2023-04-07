@@ -83,3 +83,5 @@
 - Created layouts dir and mdxPageLayout.tsx in it
 - Succeeded in applying the layout to mdx pages
 - Added type definitions for frontMatter
+- Deleted messages/[locale].json
+- Changed localeData structure with Map
