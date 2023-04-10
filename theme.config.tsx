@@ -46,6 +46,9 @@ const config: DocsThemeConfig = {
     text: null,
   },
   gitTimestamp: null,
+  navbar: {
+    component: <div>aaaa</div>,
+  },
   search: {
     emptyResult: (
       <span className="nx-block nx-select-none nx-p-8 nx-text-center nx-text-sm nx-text-gray-400">

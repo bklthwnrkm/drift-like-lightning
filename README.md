@@ -90,3 +90,7 @@
 - Changed localeData structure with Map
   - Accordingly, Created a type guard function for locales
 - Simplified type definition of localeData
+
+0410
+
+- Created navbar.tsx for my custom navbar that replaces the off-the-shelf one(Not completed yet)

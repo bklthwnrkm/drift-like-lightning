@@ -1,4 +1,6 @@
+import { Folder, MdxFile } from "nextra";
 import { siteMetadata } from "@/data/siteMetadata";
+// import * as t from "@/data/translation/translateData";
 
 export type TranslateDataObjectType = Record<
   string,
@@ -6,6 +8,11 @@ export type TranslateDataObjectType = Record<
 >;
 
 export type TranslateDataStringType = Record<string, string>;
+
+export type TranslateDataType = Map<
+  typeof siteMetadata.locales[number],
+  Map<string, string>
+>;
 
 export type LocalizedDateType = Map<
   typeof siteMetadata.locales[number],

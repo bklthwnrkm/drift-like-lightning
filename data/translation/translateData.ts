@@ -1,8 +1,30 @@
 import {
+  TranslateDataType,
   TranslateDataStringType,
   TranslateDataObjectType,
   LocalizedDateType,
 } from "@/types";
+
+// export const translateData = new Map([
+//   [
+//     "ja",
+//     new Map([
+//       ["certificationData", ""],
+//       ["data2", "データ2"],
+//     ]),
+//   ],
+//   [
+//     "en",
+//     new Map([
+//       ["data1", "data1"],
+//       ["data2", "data2"],
+//     ]),
+//   ],
+// ]);
+
+// export const translateDataKeys = [
+//   ...Array.from(translateData.get("en").keys()),
+// ] as const;
 
 export const certificationData: TranslateDataObjectType = {
   en: [
