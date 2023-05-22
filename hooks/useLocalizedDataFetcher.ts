@@ -7,10 +7,6 @@ type ReturnDataType<
   ? { readonly localizedData: string }
   : { readonly localizedData: Record<string, string>[] };
 
-// 二つデータのタイプがあるのが綺麗でない気がするので、データの型用検討
-// 第二引数でどのプロパティを取るか指定できるようにする？
-// 第二引数の型は、第一引数のプロパティに含まれているものでなければならない。
-
 const useLocalizedDataFetcher = <
   T extends TranslateDataObjectType | TranslateDataStringType
 >(

@@ -53,3 +53,28 @@ export type MyFrontMatterType = {
 export type Merge<T> = {
   [K in keyof T]: T[K];
 };
+
+export type NavMenu = {
+  title: string;
+
+  breadcrumb: boolean;
+  collapsed: boolean;
+  footer: boolean;
+  layout: "default" | "full" | "raw";
+  navbar: boolean;
+  pagination: boolean;
+  sidebar: boolean;
+  timestamp: boolean;
+  toc: boolean;
+  typesetting: "default" | "article";
+};
+
+// export type Item = MdxFile & {
+//   title: string;
+//   type: string;
+//   children?: Item[];
+//   display?: "normal" | "hidden" | "children";
+//   withIndexPage?: boolean;
+//   theme?: PageTheme;
+//   isUnderCurrentDocsTree?: boolean;
+// };

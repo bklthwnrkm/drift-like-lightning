@@ -29,29 +29,29 @@ import {
 export const certificationData: TranslateDataObjectType = {
   en: [
     {
-      title: "The EIKEN Test in Practical English Proficiency Grade 1",
+      title: "sky1",
       acquisitionDate: "",
     },
     {
-      title: "NASM-PES",
+      title: "sky2",
       acquisitionDate: "",
     },
     {
-      title: "TOEIC Listening & Reading 925",
+      title: "sky3",
       acquisitionDate: "",
     },
   ],
   ja: [
     {
-      title: "実用英語技能検定1級",
+      title: "空1",
       acquisitionDate: "2021-11-30",
     },
     {
-      title: "全米ｽﾎﾟｰﾂ医学協会ﾊﾟﾌｫｰﾏﾝｽ向上ｽﾍﾟｼｬﾘｽﾄ",
+      title: "空2",
       acquisitionDate: "2020-09-08",
     },
     {
-      title: "TOEIC Listening & Reading 925点",
+      title: "空3",
       acquisitionDate: "2020-10-20",
     },
   ],
@@ -60,30 +60,30 @@ export const certificationData: TranslateDataObjectType = {
 export const certificationImageData: TranslateDataObjectType = {
   en: [
     {
-      alt: "The EIKEN Test in Practical English Proficiency Grade 1",
-      src: "/static/images/eiken-grade-1.jpg",
+      alt: "sky1",
+      src: "/static/images/sky.jpg",
     },
     {
-      alt: "NASM-PES",
-      src: "/static/images/nasm-pes.jpg",
+      alt: "sky2",
+      src: "/static/images/sky.jpg",
     },
     {
-      alt: "TOEIC Listening and Reading score",
-      src: "/static/images/toeic-l-and-r-score.jpg",
+      alt: "sky3",
+      src: "/static/images/sky.jpg",
     },
   ],
   ja: [
     {
-      alt: "実用英語技能検定1級",
-      src: "/static/images/eiken-grade-1.jpg",
+      alt: "空1",
+      src: "/static/images/sky.jpg",
     },
     {
-      alt: "全米ｽﾎﾟｰﾂ医学協会ﾊﾟﾌｫｰﾏﾝｽ向上ｽﾍﾟｼｬﾘｽﾄ",
-      src: "/static/images/nasm-pes.jpg",
+      alt: "空2",
+      src: "/static/images/sky.jpg",
     },
     {
-      alt: "TOEIC ﾘｽﾆﾝｸﾞ ﾘｰﾃﾞｨﾝｸﾞｽｺｱ",
-      src: "/static/images/toeic-l-and-r-score.jpg",
+      alt: "空3",
+      src: "/static/images/sky.jpg",
     },
   ],
 };

@@ -25,5 +25,3 @@ const TranslatedString = <
 };
 
 export default TranslatedString;
-
-// これ、単に翻訳した文字列を返すだけのシンプルなコンポーネントにする？

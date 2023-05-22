@@ -1,13 +1,10 @@
 import React from "react";
-import {
-  DocsThemeConfig,
-  useMDXComponents,
-  useConfig,
-} from "nextra-theme-docs";
+import { DocsThemeConfig, useMDXComponents } from "nextra-theme-docs";
 import ThemeSwitcher from "@/components/themeSwitcher";
-import LocalizedDate from "@/components/localizedDate";
+// import LocalizedDate from "@/components/localizedDate";
 import TranslatedString from "@/components/translatedString";
-import StringTranslator from "./components/stringTranslator";
+import StringTranslator from "@/components/stringTranslator";
+// import Navbar from "@/components/navbar";
 import { siteMetadata } from "@/data/siteMetadata";
 import {
   searchNotFoundData,
@@ -46,19 +43,14 @@ const config: DocsThemeConfig = {
     text: null,
   },
   gitTimestamp: null,
-  navbar: {
-    component: <div>aaaa</div>,
-  },
+  // navbar: {
+  //   component: <Navbar items={["a", "b", "c"]} />,
+  // },
   search: {
     emptyResult: (
       <span className="nx-block nx-select-none nx-p-8 nx-text-center nx-text-sm nx-text-gray-400">
         <StringTranslator strData={searchNotFoundData} />
       </span>
-      // <TranslatedString<"span">
-      //   as="span"
-      //   data={searchNotFoundData}
-      //   className="nx-block nx-select-none nx-p-8 nx-text-center nx-text-sm nx-text-gray-400"
-      // />
     ),
     placeholder() {
       const { localizedData: placeholder } =
